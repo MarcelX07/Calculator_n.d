@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rechner</title>
+    <comment><ion-icon name="calculator-outline"></ion-icon></comment>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/expr-eval@2.0.2/dist/bundle.min.js"></script>
+</head>
+<body>
+<div class="buttonContainer">
+    <button id="closeOpenButton" class="optionButtons">Open/Close</button>
+    <button id="addFunction" class="optionButtons">Add Funktion</button>
+    <button id="addVector" class="optionButtons">Add Vector</button>
+</div>
+<div id="calculator-standart" class="calculator">
+    <div id="controlLine">
+        <button id="close"> </button>
+        <button id="extended"> </button>
+    </div>
+    <div id="equation"> </div>
+    <div id="extendedKeypadContainer">
+        <button class="mathFunction" id="id-(">(</button>
+        <button class="mathFunction" id="id-)">)</button>
+        <button class="mathFunction" id="mc">mc</button>
+        <button class="mathFunction" id="m+">m+</button>
+        <button class="mathFunction" id="m-">m-</button>
+        <button class="mathFunction" id="mr">mr</button>
+        <button class="mathFunction" id="2^nd">2ⁿᵈ</button>
+        <button class="mathFunction" id="x^2">x²</button>
+        <button class="mathFunction" id="x^3">x³</button>
+        <button class="mathFunction" id="x^y">xʸ</button>
+        <button class="mathFunction" id="e^x">ℯˣ</button>
+        <button class="mathFunction" id="10^x">10ˣ</button>
+        <button class="mathFunction" id="1/x">¹/x</button>
+        <button class="mathFunction" id="2rx">√x</button>
+        <button class="mathFunction" id="3rx">³√x</button>
+        <button class="mathFunction" id="nrx">ⁿ√x</button>
+        <button class="mathFunction" id="ln">ln</button>
+        <button class="mathFunction" id="log10">log</button>
+        <button class="mathFunction" id="faculty">x!</button>
+        <button class="mathFunction" id="sin">sin</button>
+        <button class="mathFunction" id="cos">cos</button>
+        <button class="mathFunction" id="tan">tan</button>
+        <button class="mathFunction" id="e">ℯ</button>
+        <button class="mathFunction" id="EE">EE</button>
+        <button class="mathFunction" id="Rad">Rad</button>
+        <button class="mathFunction" id="sinh">sinh</button>
+        <button class="mathFunction" id="cosh">cosh</button>
+        <button class="mathFunction" id="tanh">tanh</button>
+        <button class="mathFunction" id="pi">π</button>
+        <button class="mathFunction" id="Rand">Rand</button>
+    </div>
+    <div id="numericKeypadContainer">
+        <button id="c" class="mathFunction" class="gridItem">c</button>
+        <button id="changeTheSign" class="mathFunction">+/-</button>
+        <button id="procent" class="mathFunction">%</button>
+        <button id="division" class="mathOperator">÷</button>
+        <button id="id-7" class="number">7</button>
+        <button id="id-8" class="number">8</button>
+        <button id="id-9" class="number">9</button>
+        <button id="multiplication" class="mathOperator">×</button>
+        <button id="id-4" class="number">4</button>
+        <button id="id-5" class="number">5</button>
+        <button id="id-6" class="number">6</button>
+        <button id="minus" class="mathOperator">−</button>
+        <button id="id-1" class="number">1</button>
+        <button id="id-2" class="number">2</button>
+        <button id="id-3" class="number">3</button>
+        <button id="addition" class="mathOperator">+</button>
+        <button id="id-0" class="number">0</button>
+        <button id="comma" class="number">,</button>
+        <button id="equals" class = "solve">=</button>
+    </div>
+</div>
+<div id="Coordinate2dContainer"> </div>
+<script defer src="JavaScript/calculator.js" type="module"></script>
+<script defer src="JavaScript/coordinatesSystem2D.js" type="module"></script>
+</body>
+</html>
